@@ -173,8 +173,7 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
             {/* Thumbnail */}
-            <div className="px-4 sm:px-0">
-            <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden shadow-xl">
+            <div className="relative aspect-video lg:aspect-auto lg:h-full lg:min-h-[300px] rounded-xl overflow-hidden shadow-xl">
               <Image
                 src="https://i.ytimg.com/vi/rqUvs8j6bQM/maxresdefault.jpg"
                 alt="Ep 5: Losing the Battle to Win the War — Chasing the American Dream"
@@ -196,7 +195,6 @@ export default async function HomePage() {
                   </svg>
                 </a>
               </div>
-            </div>
             </div>
 
             {/* Info */}

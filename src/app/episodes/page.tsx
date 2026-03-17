@@ -14,9 +14,8 @@ export const metadata: Metadata = {
   },
 };
 
-const START_HERE_IDS = ["rqUvs8j6bQM", "BZG_tTFYrWs", "ozTIAJayLEY"];
+const START_HERE_IDS = ["zasVgF1E5so", "BZG_tTFYrWs", "ozTIAJayLEY"];
 const START_HERE_TITLES: Record<string, string> = {
-  rqUvs8j6bQM: "Ep 5: Losing the Battle to Win the War — Chasing the American Dream",
   BZG_tTFYrWs: "Ep 6: More Than a Crown: From Nigeria to Miss New Jersey USA & Beyond",
   ozTIAJayLEY: "Ep 17: The American Dream: One Generation Later",
 };

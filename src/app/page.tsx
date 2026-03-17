@@ -104,7 +104,7 @@ export default async function HomePage() {
               </p>
 
               {/* Buttons */}
-              <div className="flex flex-col sm:flex-row items-start gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                 <LatestEpisodeButton latestVideoId={latestVideo?.id} />
                 <Link
                   href="/my-story"

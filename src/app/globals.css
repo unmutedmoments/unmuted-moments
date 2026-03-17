@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-playfair: "Playfair Display", serif;
+  --font-dm: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-dm), sans-serif;
+  background-color: #f7f2ea;
+  color: #0f0c09;
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+  .font-dm {
+    font-family: var(--font-dm);
+  }
+}

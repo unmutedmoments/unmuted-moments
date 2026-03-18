@@ -84,18 +84,18 @@ export default async function HomePage() {
               </h1>
 
               {/* Accent quote + attribution */}
-              <p className="font-playfair text-xl md:text-2xl italic text-gold mb-1">
-                &ldquo;I didn&apos;t want them to hear my accent.&rdquo;
-              </p>
-              <p className="text-charcoal/50 text-sm mb-6">
-                — Ehis, on arriving in America at 17
-              </p>
+              <div className="border-l-[3px] border-gold pl-[14px] mb-6">
+                <p className="font-playfair text-xl md:text-2xl italic text-gold mb-1">
+                  &ldquo;I didn&apos;t want them to hear my accent.&rdquo;
+                </p>
+                <p className="font-dm text-sm text-charcoal/50">
+                  — Ehis, on arriving in America at 17
+                </p>
+              </div>
 
               {/* Description */}
               <p className="text-charcoal text-lg leading-relaxed mb-4 max-w-lg">
-                For young professionals, immigrants, and anyone navigating the
-                journey to finding and owning their voice — one honest
-                conversation at a time.
+                For immigrants, first-gen professionals, and anyone tired of hiding their voice. Real stories and practical strategies to grow your confidence, career, and voice.
               </p>
 
               {/* Hosted by */}

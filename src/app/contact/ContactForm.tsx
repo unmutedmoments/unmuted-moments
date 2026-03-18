@@ -17,7 +17,7 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch("/", {
+      await fetch("/netlify-forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         // eslint-disable-next-line @typescript-eslint/no-explicit-any

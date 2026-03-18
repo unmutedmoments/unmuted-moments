@@ -8,3 +8,6 @@
 [build.environment]
   NEXT_PUBLIC_YOUTUBE_API_KEY = "AIzaSyC_qF_kFuh8HxJ3SwB0jMFT_A5epYgVlaY"
   NEXT_PUBLIC_YOUTUBE_CHANNEL_ID = "UC7uTUtgaAtL1riVj9pYkmKA"
+
+[build.processing]
+  skip_processing = false

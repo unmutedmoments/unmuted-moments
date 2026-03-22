@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     title: "My Story | Ehis Akhetuamhen | Unmuted Moments",
     description:
       "From Benin City, Nigeria to KPMG, Goldman Sachs, and Google — the story behind Unmuted Moments and why Ehis Akhetuamhen started the show.",
+    url: "https://www.unmutedmomentspodcast.com/my-story",
+    type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

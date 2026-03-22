@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     title: "Media | Unmuted Moments",
     description:
       "Podcast appearances, press features, and interviews with Ehis Akhetuamhen on leadership, the immigrant journey, and finding your voice.",
+    url: "https://www.unmutedmomentspodcast.com/media",
+    type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

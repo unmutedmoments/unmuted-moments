@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     title: "Contact | Unmuted Moments",
     description:
       "Reach out to Ehis Akhetuamhen for speaking engagements, partnerships, podcast guest pitches, or career consultations.",
+    url: "https://www.unmutedmomentspodcast.com/contact",
+    type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

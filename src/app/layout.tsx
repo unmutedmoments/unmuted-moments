@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Unmuted Moments",
     type: "website",
-    images: [{ url: "/favicon.png" }],
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

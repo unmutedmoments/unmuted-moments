@@ -15,12 +15,15 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Unmuted Moments | Because the World Needs Your Voice",
   description:
-    "Unmuted Moments is a podcast exploring the journey to finding and owning your voice through conversations with immigrants, leaders, and professionals.",
+    "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
   openGraph: {
     title: "Unmuted Moments | Because the World Needs Your Voice",
     description:
-      "Unmuted Moments is a podcast exploring the journey to finding and owning your voice through conversations with immigrants, leaders, and professionals.",
+      "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
+    url: "https://www.unmutedmomentspodcast.com/",
     type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

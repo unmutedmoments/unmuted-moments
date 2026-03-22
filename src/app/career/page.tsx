@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     title: "Career Advice | Unmuted Moments",
     description:
       "Finance career guidance from Ehis Akhetuamhen — 12+ years across Big 4, Wall Street, and Big Tech. Book a 1:1 consultation.",
+    url: "https://www.unmutedmomentspodcast.com/career",
+    type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

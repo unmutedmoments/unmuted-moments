@@ -11,6 +11,10 @@ export const metadata: Metadata = {
     title: "Episodes | Unmuted Moments Podcast",
     description:
       "Browse all episodes of Unmuted Moments — honest conversations with immigrants, professionals, and leaders about finding and owning their voice.",
+    url: "https://www.unmutedmomentspodcast.com/episodes",
+    type: "website",
+    siteName: "Unmuted Moments",
+    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
   },
 };
 

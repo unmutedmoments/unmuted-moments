@@ -13,13 +13,19 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const video = await getVideoById(params.videoId);
   if (!video) return { title: "Episode | Unmuted Moments" };
+  const description = video.description.slice(0, 160).trimEnd();
   return {
     title: `${video.title} | Unmuted Moments`,
-    description: video.description.slice(0, 160),
+    description,
     openGraph: {
       title: `${video.title} | Unmuted Moments`,
-      description: video.description.slice(0, 160),
-      images: video.thumbnail ? [{ url: video.thumbnail }] : undefined,
+      description,
+      url: `https://www.unmutedmomentspodcast.com/episodes/${video.id}`,
+      type: "video.other",
+      siteName: "Unmuted Moments",
+      images: video.thumbnail
+        ? [{ url: video.thumbnail, width: 1280, height: 720, alt: video.title }]
+        : [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
     },
   };
 }

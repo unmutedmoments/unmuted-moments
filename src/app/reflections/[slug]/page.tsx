@@ -18,13 +18,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | Unmuted Moments`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
+    },
     openGraph: {
       title: `${post.title} | Unmuted Moments`,
       description: post.excerpt,
       url: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
       type: "article",
       siteName: "Unmuted Moments",
-      images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
+      images: [{ url: "https://www.unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | Unmuted Moments`,
+      description: post.excerpt,
+      images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
     },
   };
 }

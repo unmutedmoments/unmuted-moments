@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Unmuted Moments | Because the World Needs Your Voice",
   description:
     "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
+  alternates: {
+    canonical: "https://www.unmutedmomentspodcast.com/",
+  },
   openGraph: {
     title: "Unmuted Moments | Because the World Needs Your Voice",
     description:
@@ -24,6 +27,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unmuted Moments | Because the World Needs Your Voice",
+    description:
+      "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
+    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "My Story | Ehis Akhetuamhen | Unmuted Moments",
   description:
     "From Benin City, Nigeria to KPMG, Goldman Sachs, and Google — the story behind Unmuted Moments and why Ehis Akhetuamhen started the show.",
+  alternates: {
+    canonical: "https://www.unmutedmomentspodcast.com/my-story",
+  },
   openGraph: {
     title: "My Story | Ehis Akhetuamhen | Unmuted Moments",
     description:
@@ -13,6 +16,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "My Story | Ehis Akhetuamhen | Unmuted Moments",
+    description:
+      "From Benin City, Nigeria to KPMG, Goldman Sachs, and Google — the story behind Unmuted Moments and why Ehis Akhetuamhen started the show.",
+    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

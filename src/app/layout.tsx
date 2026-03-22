@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({

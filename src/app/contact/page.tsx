@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contact | Unmuted Moments",
   description:
     "Reach out to Ehis Akhetuamhen for speaking engagements, partnerships, podcast guest pitches, or career consultations.",
+  alternates: {
+    canonical: "https://www.unmutedmomentspodcast.com/contact",
+  },
   openGraph: {
     title: "Contact | Unmuted Moments",
     description:
@@ -13,6 +16,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Unmuted Moments",
+    description:
+      "Reach out to Ehis Akhetuamhen for speaking engagements, partnerships, podcast guest pitches, or career consultations.",
+    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

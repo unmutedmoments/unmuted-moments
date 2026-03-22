@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Media | Unmuted Moments",
   description:
     "Podcast appearances, press features, and interviews with Ehis Akhetuamhen on leadership, the immigrant journey, and finding your voice.",
+  alternates: {
+    canonical: "https://www.unmutedmomentspodcast.com/media",
+  },
   openGraph: {
     title: "Media | Unmuted Moments",
     description:
@@ -13,6 +16,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Media | Unmuted Moments",
+    description:
+      "Podcast appearances, press features, and interviews with Ehis Akhetuamhen on leadership, the immigrant journey, and finding your voice.",
+    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

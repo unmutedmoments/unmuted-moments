@@ -102,7 +102,37 @@ export default async function EpisodePage({ params }: Props) {
 
   const related = allVideos.filter((v) => v.id !== params.videoId).slice(0, 3);
 
+  const episodeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: video.title,
+    url: `https://www.unmutedmomentspodcast.com/episodes/${video.id}`,
+    datePublished: video.publishedAt,
+    description: video.description.slice(0, 500),
+    image: video.thumbnail,
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: "Unmuted Moments",
+      url: "https://www.unmutedmomentspodcast.com/episodes",
+    },
+    author: {
+      "@type": "Person",
+      name: "Ehis Akhetuamhen",
+      url: "https://www.unmutedmomentspodcast.com/my-story",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Unmuted Moments",
+      url: "https://www.unmutedmomentspodcast.com",
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(episodeJsonLd) }}
+      />
     <div className="pt-20 md:pt-24 min-h-screen bg-cream">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
         {/* Breadcrumb */}
@@ -212,5 +242,6 @@ export default async function EpisodePage({ params }: Props) {
         )}
       </div>
     </div>
+    </>
   );
 }

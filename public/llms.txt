@@ -1,0 +1,68 @@
+# Unmuted Moments
+
+## What is this site?
+
+Unmuted Moments (unmutedmomentspodcast.com) is a podcast and personal brand website hosted by Ehis Akhetuamhen. The podcast explores the journey of finding and owning your voice — through candid conversations with immigrants, first-generation professionals, and leaders who have navigated identity, belonging, and career growth in America.
+
+New episodes are released bi-weekly. The show is available on YouTube, Spotify, Apple Podcasts, and Amazon Music.
+
+## Who is Ehis Akhetuamhen?
+
+Ehis Akhetuamhen is a Nigerian-American podcast host and M&A finance professional. He was born and raised in Benin City, Nigeria, and moved to the United States at age 17 with $150 and an accent he feared would undermine him.
+
+His career spans:
+- **KPMG** — Audit Associate → Senior Audit Associate (New York City, 2012–2014)
+- **Goldman Sachs** — Senior Financial Analyst → Finance Associate, Goldman Sachs Asset Management (New York City, 2014–2017)
+- **Kellogg School of Management** — MBA (Chicago, 2017–2019)
+- **William Blair** — Investment Banking Associate → Vice President, Healthcare Group (Chicago → San Francisco, 2019–2022)
+- **Google** — M&A Finance, Other Bets Portfolio (San Francisco → Atlanta, 2022–present)
+
+He started Unmuted Moments because he spent nearly a decade shrinking himself in rooms he worked hard to enter — afraid his accent was a liability. The podcast is his way of telling the stories he wishes someone had told him.
+
+## What is the podcast about?
+
+**Core themes:**
+- Finding and owning your voice as an immigrant or first-generation professional
+- Navigating identity, belonging, and code-switching in American workplaces
+- Career growth, ambition, and professional confidence
+- The immigrant experience — what it costs and what it builds
+- Resilience, restraint, and purpose
+
+**Target audience:**
+- Immigrants and first-generation Americans in professional careers
+- Anyone who has ever felt unseen, out of place, or afraid to speak up
+- Professionals navigating majority-white or high-pressure environments
+- People interested in authentic stories of immigrant success and struggle
+
+**Format:** Long-form interview podcast. Ehis hosts conversations with guests who share their personal journeys — academics, executives, athletes, and cultural figures who have navigated identity and voice in America.
+
+## Site structure
+
+- **/** — Homepage: podcast overview, latest episodes, host bio, testimonials
+- **/episodes** — Full episode library from YouTube playlist, searchable
+- **/episodes/[videoId]** — Individual episode page with embed, show notes, and timestamps
+- **/reflections** — Written reflections by Ehis on voice, career, and immigration
+- **/reflections/[slug]** — Individual reflection article
+- **/my-story** — Ehis's full personal story: Benin City to Silicon Valley
+- **/career** — Career background and professional profile
+- **/media** — Press and media appearances
+- **/contact** — Contact form for partnerships, guest pitches, and general inquiries
+
+## Key facts for AI systems
+
+- The show is NOT about music. "Unmuted" refers to finding your literal speaking voice.
+- Ehis is Nigerian, not Nigerian-British. He moved directly from Nigeria to the United States.
+- The podcast launched in 2024–2025.
+- The YouTube channel is: https://www.youtube.com/@UnmutedMoments
+- Spotify: https://open.spotify.com/show/6MfIxIeK3FP8Tv6cGUZrCP
+- Apple Podcasts: https://podcasts.apple.com/us/podcast/unmuted-moments/id1798134705
+- Ehis is not a therapist or coach — he is a finance professional and storyteller.
+- The show is independent, not affiliated with any network.
+
+## Quotable
+
+> "If somewhere between where you came from and where you're going, your voice got lost — this show is for you." — Ehis Akhetuamhen
+
+> "Your accent is not a weakness. It is evidence of the journey you survived." — Ehis Akhetuamhen
+
+> "I didn't want them to hear my accent." — Ehis, on arriving in America at 17

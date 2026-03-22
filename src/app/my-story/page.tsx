@@ -55,9 +55,68 @@ const timeline = [
   },
 ];
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ehis Akhetuamhen",
+  url: "https://www.unmutedmomentspodcast.com/my-story",
+  birthPlace: { "@type": "Place", name: "Benin City, Nigeria" },
+  nationality: "Nigerian-American",
+  jobTitle: "Podcast Host, M&A Finance Professional",
+  description:
+    "Ehis Akhetuamhen moved to the United States at 17 with $150 and an African accent he feared would hold him back. He went on to build a career at KPMG, Goldman Sachs, William Blair, and Google. He hosts Unmuted Moments — a podcast about finding and owning your voice.",
+  alumniOf: [
+    { "@type": "CollegeOrUniversity", name: "Kellogg School of Management", description: "MBA" },
+  ],
+  worksFor: { "@type": "Organization", name: "Google" },
+  hasOccupation: [
+    {
+      "@type": "Occupation",
+      name: "Audit Associate",
+      occupationalCategory: "Finance",
+      hiringOrganization: { "@type": "Organization", name: "KPMG" },
+    },
+    {
+      "@type": "Occupation",
+      name: "Senior Financial Analyst / Finance Associate",
+      occupationalCategory: "Finance",
+      hiringOrganization: { "@type": "Organization", name: "Goldman Sachs" },
+    },
+    {
+      "@type": "Occupation",
+      name: "Investment Banking Associate / Vice President",
+      occupationalCategory: "Finance",
+      hiringOrganization: { "@type": "Organization", name: "William Blair" },
+    },
+    {
+      "@type": "Occupation",
+      name: "M&A Finance, Other Bets Portfolio",
+      occupationalCategory: "Finance",
+      hiringOrganization: { "@type": "Organization", name: "Google" },
+    },
+  ],
+  knowsAbout: [
+    "Immigration",
+    "Career development",
+    "Voice and confidence",
+    "Investment banking",
+    "M&A finance",
+    "Personal development",
+    "First-generation professionals",
+  ],
+  sameAs: [
+    "https://www.youtube.com/@UnmutedMoments",
+    "https://open.spotify.com/show/6MfIxIeK3FP8Tv6cGUZrCP",
+  ],
+};
+
 export default function MyStoryPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       {/* ─── HERO ─── */}
       <section
         className="relative min-h-screen flex flex-col justify-end"

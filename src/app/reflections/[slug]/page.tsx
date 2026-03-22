@@ -43,8 +43,33 @@ export default function ReflectionPage({ params }: Props) {
   const related = getRelatedMusings(post, 3);
   const mins = readingTime(post.content);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    url: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
+    datePublished: post.date,
+    description: post.excerpt,
+    articleSection: post.category,
+    author: {
+      "@type": "Person",
+      name: "Ehis Akhetuamhen",
+      url: "https://www.unmutedmomentspodcast.com/my-story",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Unmuted Moments",
+      url: "https://www.unmutedmomentspodcast.com",
+    },
+    inLanguage: "en-US",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <div className="pt-20 md:pt-24 bg-cream">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
           {/* Breadcrumb */}

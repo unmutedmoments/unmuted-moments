@@ -61,8 +61,57 @@ export default async function HomePage() {
     .slice(0, 3);
   const latestVideo = episodes[0];
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Unmuted Moments",
+    url: "https://www.unmutedmomentspodcast.com",
+    description:
+      "A podcast exploring the journey to finding and owning your voice through conversations with immigrants, leaders, and professionals.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target:
+        "https://www.unmutedmomentspodcast.com/episodes?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Ehis Akhetuamhen",
+    url: "https://www.unmutedmomentspodcast.com/my-story",
+    jobTitle: "Podcast Host, M&A Finance Professional",
+    description:
+      "Nigerian-American podcast host, M&A Finance leader at Google, and former Goldman Sachs and William Blair investment banking professional. Host of Unmuted Moments.",
+    knowsAbout: [
+      "Personal development",
+      "Immigration",
+      "Career growth",
+      "Voice and confidence",
+      "Investment banking",
+      "M&A finance",
+    ],
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Kellogg School of Management" },
+    ],
+    worksFor: { "@type": "Organization", name: "Google" },
+    sameAs: [
+      "https://www.youtube.com/@UnmutedMoments",
+      "https://open.spotify.com/show/6MfIxIeK3FP8Tv6cGUZrCP",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       {/* ─── HERO — two-column layout ─── */}
       <section className="bg-cream pt-20 md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">

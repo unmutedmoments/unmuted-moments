@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://www.unmutedmomentspodcast.com/episodes",
     type: "website",
     siteName: "Unmuted Moments",
-    images: [{ url: "/favicon.png", width: 1200, height: 1200, alt: "Unmuted Moments" }],
+    images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
   },
 };
 

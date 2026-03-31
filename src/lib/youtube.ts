@@ -3,6 +3,14 @@ import { YouTubeVideo } from "./types";
 const API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID;
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
+const SITE_URL = "https://unmutedmomentspodcast.com";
+
+// The YouTube API key has HTTP referer restrictions.
+// Server-side fetch calls must include a Referer header so the key is accepted.
+const YT_FETCH_OPTIONS = {
+  headers: { Referer: SITE_URL },
+  next: { revalidate: 3600 },
+} as RequestInit;
 const MIN_DURATION_SECONDS = 120; // 2 minutes — filters out YouTube Shorts
 
 /** Parse ISO 8601 duration (e.g. PT4M30S) to total seconds */
@@ -84,7 +92,7 @@ async function fetchVideoDetails(ids: string[]): Promise<YouTubeVideo[]> {
   try {
     const res = await fetch(
       `${BASE_URL}/videos?part=snippet,contentDetails&id=${ids.join(",")}&key=${API_KEY}`,
-      { next: { revalidate: 3600 } }
+      YT_FETCH_OPTIONS
     );
     if (!res.ok) return [];
     const data = await res.json();
@@ -126,7 +134,7 @@ export async function getLatestVideos(maxResults = 6): Promise<YouTubeVideo[]> {
     const fetchCount = Math.min(Math.max(maxResults * 5, 15), 50);
     const res = await fetch(
       `${BASE_URL}/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${fetchCount}&order=date&type=video&key=${API_KEY}`,
-      { next: { revalidate: 3600 } }
+      YT_FETCH_OPTIONS
     );
     if (!res.ok) throw new Error("Failed to fetch videos");
     const data = await res.json();
@@ -144,7 +152,7 @@ export async function getAllVideos(maxResults = 50): Promise<YouTubeVideo[]> {
   try {
     const res = await fetch(
       `${BASE_URL}/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=${maxResults}&order=date&type=video&key=${API_KEY}`,
-      { next: { revalidate: 3600 } }
+      YT_FETCH_OPTIONS
     );
     if (!res.ok) throw new Error("Failed to fetch videos");
     const data = await res.json();
@@ -164,7 +172,7 @@ export async function getVideosFromPlaylist(
   try {
     const res = await fetch(
       `${BASE_URL}/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=${maxResults}&key=${API_KEY}`,
-      { next: { revalidate: 3600 } }
+      YT_FETCH_OPTIONS
     );
     if (!res.ok) throw new Error("Failed to fetch playlist");
     const data = await res.json();
@@ -186,7 +194,7 @@ export async function getVideoById(
   try {
     const res = await fetch(
       `${BASE_URL}/videos?part=snippet,contentDetails&id=${videoId}&key=${API_KEY}`,
-      { next: { revalidate: 3600 } }
+      YT_FETCH_OPTIONS
     );
     if (!res.ok) throw new Error("Failed to fetch video");
     const data = await res.json();

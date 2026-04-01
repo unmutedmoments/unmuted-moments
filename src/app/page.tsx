@@ -232,71 +232,69 @@ export default async function HomePage() {
 
       {/* ─── FEATURED EPISODE ─── */}
       <section className="bg-warm py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
-            {/* Thumbnail */}
-            <div className="rounded-xl overflow-hidden shadow-xl">
-              <div className="relative aspect-video w-full lg:aspect-auto lg:h-full lg:min-h-[300px]">
-                <Image
-                  src="https://i.ytimg.com/vi/rqUvs8j6bQM/maxresdefault.jpg"
-                  alt="Ep 5: Losing the Battle to Win the War — Chasing the American Dream"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0 bg-ink/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <a
-                    href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg"
-                    aria-label="Watch on YouTube"
-                  >
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="white" className="ml-1">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Label + Title above video */}
+          <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3">
+            Featured Conversation
+          </p>
+          <h2 className="font-playfair text-2xl md:text-3xl font-bold text-ink leading-snug mb-6">
+            Ep 5: Losing the Battle to Win the War — Chasing the American Dream
+          </h2>
 
-            {/* Info */}
-            <div>
-              <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3">
-                Featured Conversation
-              </p>
-              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-ink leading-snug mb-4">
-                Ep 5: Losing the Battle to Win the War — Chasing the American Dream
-              </h2>
-              <p className="text-charcoal text-base leading-relaxed mb-4">
-                Dr. Emmanuel Ohuabunwa was bullied for his accent as a Nigerian immigrant. He went on to become the first Black male valedictorian at Johns Hopkins, then earned both an M.D. and MBA from Yale.
-              </p>
-              <p className="text-charcoal text-base leading-relaxed mb-8">
-                Now an Assistant Professor of Emergency Medicine at UT Southwestern, his story is one of resilience, restraint, and purpose — and a powerful listen for anyone who&apos;s ever felt unseen or questioned their belonging.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+          {/* Thumbnail */}
+          <div className="rounded-xl overflow-hidden shadow-xl mb-8">
+            <div className="relative aspect-video w-full">
+              <Image
+                src="https://i.ytimg.com/vi/rqUvs8j6bQM/maxresdefault.jpg"
+                alt="Ep 5: Losing the Battle to Win the War — Chasing the American Dream"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 768px"
+              />
+              <div className="absolute inset-0 bg-ink/20" />
+              <div className="absolute inset-0 flex items-center justify-center">
                 <a
                   href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+                  className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg"
+                  aria-label="Watch on YouTube"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white" className="ml-1">
+                    <path d="M8 5v14l11-7z" />
                   </svg>
-                  Watch on YouTube
-                </a>
-                <a
-                  href="https://open.spotify.com/episode/5HQQtGyEgak9dipf1FQ0bE?si=b7d2b490ea5a4fd5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors"
-                >
-                  Listen on Spotify
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Description + Buttons below video */}
+          <p className="text-charcoal text-base leading-relaxed mb-4">
+            Dr. Emmanuel Ohuabunwa was bullied for his accent as a Nigerian immigrant. He went on to become the first Black male valedictorian at Johns Hopkins, then earned both an M.D. and MBA from Yale.
+          </p>
+          <p className="text-charcoal text-base leading-relaxed mb-8">
+            Now an Assistant Professor of Emergency Medicine at UT Southwestern, his story is one of resilience, restraint, and purpose — and a powerful listen for anyone who&apos;s ever felt unseen or questioned their belonging.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+              Watch on YouTube
+            </a>
+            <a
+              href="https://open.spotify.com/episode/5HQQtGyEgak9dipf1FQ0bE?si=b7d2b490ea5a4fd5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors"
+            >
+              Listen on Spotify
+            </a>
           </div>
         </div>
       </section>

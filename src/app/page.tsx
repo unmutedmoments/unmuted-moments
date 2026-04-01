@@ -235,27 +235,29 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
             {/* Thumbnail */}
-            <div className="relative aspect-video lg:aspect-auto lg:h-full lg:min-h-[300px] rounded-xl overflow-hidden shadow-xl">
-              <Image
-                src="https://i.ytimg.com/vi/rqUvs8j6bQM/maxresdefault.jpg"
-                alt="Ep 5: Losing the Battle to Win the War — Chasing the American Dream"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-ink/20" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <a
-                  href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg"
-                  aria-label="Watch on YouTube"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white" className="ml-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </a>
+            <div className="rounded-xl overflow-hidden shadow-xl">
+              <div className="relative aspect-video w-full lg:aspect-auto lg:h-full lg:min-h-[300px]">
+                <Image
+                  src="https://i.ytimg.com/vi/rqUvs8j6bQM/maxresdefault.jpg"
+                  alt="Ep 5: Losing the Battle to Win the War — Chasing the American Dream"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-ink/20" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <a
+                    href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg"
+                    aria-label="Watch on YouTube"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="white" className="ml-1">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
 

@@ -180,7 +180,7 @@ export default async function HomePage() {
             {/* Right — trailer embed */}
             <div>
               <div className="rounded-xl overflow-hidden shadow-2xl">
-                <div className="relative aspect-video">
+                <div className="relative aspect-video w-full">
                   <iframe
                     src="https://www.youtube.com/embed/UIhRNkIV5n8?rel=0&modestbranding=1"
                     title="Unmuted Moments Trailer"
@@ -392,12 +392,14 @@ export default async function HomePage() {
                 <span>KPMG · Goldman Sachs · William Blair ·</span>
                 <span>Google · Kellogg MBA</span>
               </p>
-              <Link
-                href="/my-story"
-                className="inline-flex items-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200"
-              >
-                Read My Full Story →
-              </Link>
+              <div className="text-center md:text-left">
+                <Link
+                  href="/my-story"
+                  className="inline-flex items-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200"
+                >
+                  Read My Full Story →
+                </Link>
+              </div>
             </div>
           </div>
         </div>

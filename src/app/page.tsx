@@ -12,6 +12,8 @@ import {
 } from "@/components/Icons";
 import type { Metadata } from "next";
 
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "Unmuted Moments | Because the World Needs Your Voice",
   description:

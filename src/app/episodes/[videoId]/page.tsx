@@ -201,7 +201,7 @@ export default async function EpisodePage({ params }: Props) {
             href="https://open.spotify.com/show/6MfIxIeK3FP8Tv6cGUZrCP"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
           >
             <SpotifyIcon size={18} />
             Listen on Spotify
@@ -210,7 +210,7 @@ export default async function EpisodePage({ params }: Props) {
             href="https://podcasts.apple.com/us/podcast/unmuted-moments/id1798134705"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
           >
             <ApplePodcastsIcon size={18} />
             Listen on Apple Podcasts
@@ -219,7 +219,7 @@ export default async function EpisodePage({ params }: Props) {
             href="https://music.amazon.com/podcasts/0d336eb6-da95-4ca6-b408-220c5138a2a0/unmuted-moments"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
           >
             <AmazonMusicIcon size={18} />
             Listen on Amazon Music

@@ -11,6 +11,48 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "Be yourself vs Trust yourself",
+    slug: "be-yourself-vs-trust-yourself",
+    category: "Personal Development",
+    date: "April 1, 2026",
+    excerpt:
+      "Be yourself is the worst advice you can give a nervous person.",
+    content: `Be yourself is the worst advice you can give a nervous person. Whether I am preparing for a big presentation, giving a best man speech, or sitting down to record a podcast, that advice just does not help.
+
+I had not recorded a podcast episode in months. As I was setting up my mic and adjusting the camera, I could feel myself getting nervous. Which did not make sense. I have done this many times before.
+
+But in that moment, being myself meant being the version of me that had not done research in a while, had not practiced my intro or outro, had not hit record in months. That version did not feel ready.
+
+Then something shifted when I remembered why I started doing this in the first place. I love talking to people. I love asking questions. I love learning something about someone I would not have known otherwise. And someone out there might need this conversation.
+
+That thought pulled me out of my head. And when my guest showed genuine interest and trust in me to hold a great conversation, it gave me back the confidence I had not fully found in myself yet. Somewhere in those first few minutes, the muscle memory returned.
+
+Be yourself is a snapshot. Trust yourself is about what got you here. The reps, the hard work, the sweat. The cumulative version of you, not just who you are in this one nervous moment.
+
+Nerves will come and go. But your experience does not.`,
+  },
+  {
+    title: "Don't do the time before the sentence",
+    slug: "dont-do-the-time-before-the-sentence",
+    category: "Personal Development",
+    date: "March 23, 2026",
+    excerpt:
+      "I spent my birthday weekend worrying about a mistake I had not even made yet.",
+    content: `I spent my birthday weekend worrying about a mistake I had not even made yet.
+
+A few weeks ago, I took a trip to New York with my wife for my birthday. It was a great weekend with good food, time with friends, and karaoke. But I could not fully switch off.
+
+There was a valuation analysis at work I kept replaying in my head. Something felt off. I was worried I had missed something, and more worried about how that would look.
+
+When I got back, I checked it. I had missed something. I fixed it quickly. And what stood out was that no one else was nearly as worried about it as I had been, even after discussing the change.
+
+I had spent my birthday weekend carrying stress over something that, in reality, was not that serious.
+
+There is a difference between accountability and being your own harshest critic. When you make a mistake, own it, fix it, and move on. But do not punish yourself for something that may not even matter.
+
+Sometimes there is no sentence at all. You just did the time anyway.`,
+  },
+  {
     title: "The Mailman Who Changed My Life",
     slug: "the-mailman-who-changed-my-life",
     category: "Immigration",

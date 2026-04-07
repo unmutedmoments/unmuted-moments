@@ -816,6 +816,49 @@ If we, as professionals, looked closer at the unseen struggles and sacrifices be
 
 So, whenever I feel tempted to envy what someone else has, I ask myself: "What pain am I not seeing?" This simple question helps me find contentment in what I have.`,
   },
+  {
+    title: "Be Dumb on Purpose",
+    slug: "be-dumb-on-purpose",
+    category: "Personal Development",
+    date: "April 7, 2026",
+    excerpt:
+      "The smartest thing I ever did was stop trying to be so smart about it.",
+    content: `The smartest thing I ever did was stop trying to be so smart about it.
+
+I keep seeing a phrase online lately that I won't repeat here (it has "maxxing" in the name).
+
+But the idea behind it is hard to ignore.
+
+Be a little dumb on purpose.
+
+Not careless. Not uninformed. Just willing to try something before everything is perfectly thought through.
+
+I spent months in anguish before I started my podcast.
+
+I knew what I wanted it to be like. But I kept finding reasons to wait.
+
+I wasn't a polished English speaker. I had no journalism or interviewing experience. I didn't even know how to edit a 30-second video.
+
+What I was really doing was avoiding failing in public.
+
+Instead of trying to learn everything before I started, I made a different decision:
+
+I might not be great at this. And that's fine.
+
+What matters is starting.
+
+One year later, I'm 25 episodes in. And it's one of the things that brings me the most joy.
+
+Overthinking feels productive. It looks like preparation. But most of the time, it's just fear wearing a better outfit.
+
+If you're sitting on something right now starting a podcast, moving to a new city, launching a side hustle, reaching out to someone you care about:
+
+Be a little dumb on purpose.
+
+Start before you feel ready. Adjust as you go.
+
+The doing will teach you what the thinking never can.`,
+  },
 ];
 
 export function getMusing(slug: string): Musing | undefined {

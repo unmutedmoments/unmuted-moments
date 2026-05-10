@@ -11,6 +11,86 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "Undervalued People Outperform",
+    slug: "undervalued-people-outperform",
+    category: "Career",
+    date: "April 20, 2026",
+    excerpt: "Undervalued assets outperform. So do undervalued people.",
+    content: `Undervalued assets outperform. So do undervalued people.
+
+But first, you have to survive being underestimated.
+
+I went to Berea College, a small school in Kentucky.
+
+Not a name that turns heads at recruiting events.
+
+I remember going to accounting conferences designed to connect students with companies.
+
+I didn't get selected for a single interview.
+
+What made it worse, I had spent every dollar I had on the flight and registration fee.
+
+Sometimes I had to beg someone for a ride to the airport just to get there.
+
+I started to wonder if my dream of working at a big company in a city like New York was ever going to happen.
+
+But Berea had something most schools didn't.
+
+Every student receives a full tuition scholarship and participates in a work program that gives you real experience.
+
+And because the school is small, professors actually know you, both your story and goals.
+
+One of mine introduced me to a partner at KPMG, one of the big accounting firms.
+
+That introduction became my first job in New York City.
+
+The same thing I thought was holding me back was actually what opened the door.
+
+Sahar Jamal put it well on an episode of Unmuted Moments a few months ago. Undervalued people tend to have the highest upside.
+
+So if you're from a small school, a recent immigrant, or both, and starting to lose faith especially in the current job market, keep going.
+
+Control what you can control.
+
+Undervalued doesn't mean lacking.
+
+It usually means not fully seen yet.`,
+  },
+  {
+    title: "Accountability Without Self-Punishment",
+    slug: "accountability-without-self-punishment",
+    category: "Personal Development",
+    date: "March 25, 2026",
+    excerpt: "I spent my birthday weekend worrying about a mistake I hadn't even made yet.",
+    content: `I spent my birthday weekend worrying about a mistake I hadn't even made yet.
+
+A few weeks ago, I took a trip to New York with my wife for my birthday.
+
+It was a great weekend with good food, time with friends, and karaoke.
+
+But I couldn't fully switch off.
+
+There was a valuation analysis at work I kept replaying in my head. Something felt off.
+
+I was worried I had missed something, and more worried about how that would look.
+
+When I got back, I checked it.
+
+I had missed something.
+
+I fixed it quickly. And what stood out was that no one else was nearly as worried about it as I had been, even after discussing the change.
+
+I had spent my birthday weekend carrying stress over something that, in reality, wasn't that serious.
+
+There's a difference between accountability and being your own harshest critic.
+
+When you make a mistake, own it, fix it, and move on.
+
+But don't punish yourself for something that may not even matter.
+
+Sometimes, there's no sentence at all. You just did the time anyway.`,
+  },
+  {
     title: "Be yourself vs Trust yourself",
     slug: "be-yourself-vs-trust-yourself",
     category: "Personal Development",

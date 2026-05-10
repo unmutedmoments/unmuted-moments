@@ -134,13 +134,6 @@ export default async function HomePage() {
 
             {/* Left — copy */}
             <div>
-              {/* Badge — sharp corners */}
-              <div className="inline-flex items-center border border-ink/25 rounded-sm px-3 py-1 mb-6">
-                <span className="text-ink text-xs font-semibold uppercase tracking-widest">
-                  New Episodes Bi-Weekly
-                </span>
-              </div>
-
               {/* Main heading */}
               <h1 className="font-playfair text-4xl sm:text-5xl xl:text-6xl font-bold text-ink leading-tight mb-5">
                 Because the world needs your{" "}

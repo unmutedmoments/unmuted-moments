@@ -160,12 +160,12 @@ export default async function HomePage() {
                 Hosted by Ehis Akhetuamhen.
               </p>
 
-              {/* Buttons */}
+              {/* Tier 1 CTA pair — full-width on mobile, stacked, gap-4 */}
               <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                 <LatestEpisodeButton latestVideoId={latestVideo?.id} />
                 <Link
                   href="/my-story"
-                  className="w-full sm:w-auto px-6 py-3 border-2 border-rust text-rust font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 text-center"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 border-2 border-rust text-rust font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                 >
                   Meet the Host
                 </Link>
@@ -213,7 +213,7 @@ export default async function HomePage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sand/70 hover:text-cream transition-colors duration-200 flex items-center gap-2 text-sm"
+                  className="text-sand/70 hover:text-cream transition-colors duration-200 flex items-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 focus-visible:ring-offset-ink rounded"
                   title={name}
                 >
                   <Icon size={22} />
@@ -252,7 +252,7 @@ export default async function HomePage() {
                   href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg"
+                  className="w-16 h-16 rounded-full bg-rust/90 hover:bg-rust flex items-center justify-center transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 focus-visible:ring-offset-ink/20"
                   aria-label="Watch on YouTube"
                 >
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="white" className="ml-1">
@@ -263,19 +263,20 @@ export default async function HomePage() {
             </div>
           </div>
 
-          {/* Description + Buttons below video */}
+          {/* Description + Tier 1 CTA pair */}
           <p className="text-charcoal text-base leading-relaxed mb-4">
             Dr. Emmanuel Ohuabunwa was bullied for his accent as a Nigerian immigrant. He went on to become the first Black male valedictorian at Johns Hopkins, then earned both an M.D. and MBA from Yale.
           </p>
           <p className="text-charcoal text-base leading-relaxed mb-8">
             Now an Assistant Professor of Emergency Medicine at UT Southwestern, his story is one of resilience, restraint, and purpose — and a powerful listen for anyone who&apos;s ever felt unseen or questioned their belonging.
           </p>
+          {/* Tier 1 CTA pair — full-width on mobile, stacked, gap-3 */}
           <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="https://www.youtube.com/watch?v=rqUvs8j6bQM"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -286,7 +287,7 @@ export default async function HomePage() {
               href="https://open.spotify.com/episode/5HQQtGyEgak9dipf1FQ0bE?si=b7d2b490ea5a4fd5"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
             >
               Listen on Spotify
             </a>
@@ -297,21 +298,13 @@ export default async function HomePage() {
       {/* ─── RECENT CONVERSATIONS ─── */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-10 gap-4">
-            <div>
-              <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
-                Latest Episodes
-              </p>
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-ink">
-                Recent Conversations
-              </h2>
-            </div>
-            <Link
-              href="/episodes"
-              className="hidden sm:inline-flex items-center text-xs font-semibold text-ink hover:text-rust transition-colors gap-1 uppercase tracking-wider whitespace-nowrap"
-            >
-              View All Episodes →
-            </Link>
+          <div className="mb-10">
+            <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
+              Latest Episodes
+            </p>
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-ink">
+              Recent Conversations
+            </h2>
           </div>
 
           {episodes.length > 0 ? (
@@ -326,12 +319,13 @@ export default async function HomePage() {
             </p>
           )}
 
-          <div className="mt-8 text-center sm:hidden">
+          {/* Tier 2: centered, auto-width, rust bg — unified for mobile + desktop */}
+          <div className="mt-8 text-center">
             <Link
               href="/episodes"
-              className="px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors inline-block"
+              className="inline-flex items-center justify-center gap-1 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
             >
-              View All Episodes
+              View All Episodes →
             </Link>
           </div>
         </div>
@@ -387,10 +381,11 @@ export default async function HomePage() {
                 <span>KPMG · Goldman Sachs · William Blair ·</span>
                 <span>Google · Kellogg MBA</span>
               </p>
+              {/* Tier 2: centered on mobile, left on desktop */}
               <div className="text-center md:text-left">
                 <Link
                   href="/my-story"
-                  className="inline-flex items-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                 >
                   Read My Full Story →
                 </Link>
@@ -443,17 +438,17 @@ export default async function HomePage() {
                 guest, or inquire about collaboration.
               </p>
             </div>
-            {/* Right — buttons side by side */}
+            {/* Right — Tier 1 CTA pair */}
             <div className="flex flex-col sm:flex-row gap-4 md:justify-end">
               <Link
                 href="/contact"
-                className="w-full sm:w-auto px-6 py-3 bg-rust text-cream text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors text-center uppercase tracking-wide"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 uppercase tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
               >
                 Partnership Inquiry
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto px-6 py-3 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors text-center uppercase tracking-wide"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 uppercase tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
               >
                 Pitch a Guest
               </Link>

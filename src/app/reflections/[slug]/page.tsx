@@ -87,7 +87,10 @@ export default function ReflectionPage({ params }: Props) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm text-charcoal/60 flex items-center gap-2 flex-wrap">
-            <Link href="/reflections" className="hover:text-rust transition-colors font-medium">
+            <Link
+              href="/reflections"
+              className="hover:text-rust transition-colors font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 rounded"
+            >
               Reflections
             </Link>
             <span className="text-charcoal/30">/</span>
@@ -155,7 +158,7 @@ export default function ReflectionPage({ params }: Props) {
           <div className="mt-12 pt-8 border-t border-sand">
             <Link
               href="/reflections"
-              className="text-rust font-semibold hover:text-rust-dark transition-colors flex items-center gap-1"
+              className="inline-flex items-center gap-1 text-rust font-semibold hover:text-rust-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 rounded"
             >
               ← Back to Reflections
             </Link>
@@ -187,9 +190,10 @@ export default function ReflectionPage({ params }: Props) {
                   <p className="text-charcoal/70 text-sm leading-relaxed line-clamp-2 mb-4">
                     {m.excerpt}
                   </p>
+                  {/* Tier 2: auto-width, rust bg, white text */}
                   <Link
                     href={`/reflections/${m.slug}`}
-                    className="text-rust text-sm font-semibold hover:text-rust-dark transition-colors mt-auto"
+                    className="inline-flex items-center justify-center px-5 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 mt-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                   >
                     Read More →
                   </Link>

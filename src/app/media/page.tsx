@@ -124,11 +124,12 @@ export default function MediaPage() {
                   <p className="text-charcoal text-base leading-relaxed mb-5">
                     {item.description}
                   </p>
+                  {/* Tier 2: auto-width, rust bg, white text */}
                   <a
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors self-start"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 self-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                   >
                     Listen on Spotify →
                   </a>
@@ -152,7 +153,7 @@ export default function MediaPage() {
                 href={article.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-5 bg-white hover:bg-cream rounded-xl p-6 transition-colors shadow-sm"
+                className="group flex items-start gap-5 bg-white hover:bg-cream rounded-xl p-6 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
               >
                 <div className="flex-1">
                   <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
@@ -230,9 +231,10 @@ export default function MediaPage() {
           <p className="text-charcoal mb-7 text-base leading-relaxed">
             Reach out and let&apos;s talk about a collaboration.
           </p>
+          {/* Tier 2: centered, auto-width, rust bg */}
           <Link
             href="/contact"
-            className="inline-flex items-center px-7 py-3.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             Get in Touch →
           </Link>

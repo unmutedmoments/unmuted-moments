@@ -59,7 +59,7 @@ export default function NewsletterSignup() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="px-6 py-3 bg-transparent border-2 border-cream text-cream text-sm font-semibold rounded-md hover:bg-cream hover:text-rust transition-colors duration-200 whitespace-nowrap uppercase tracking-wide disabled:opacity-60"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-transparent border-2 border-cream text-cream text-sm font-semibold rounded-md hover:bg-cream hover:text-rust transition-colors duration-200 whitespace-nowrap uppercase tracking-wide disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 focus-visible:ring-offset-rust"
             >
               {status === "loading" ? "Subscribing…" : "Subscribe"}
             </button>

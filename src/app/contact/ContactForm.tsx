@@ -164,7 +164,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full sm:w-auto px-8 py-3.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 uppercase tracking-wide"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 uppercase tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
       >
         Send Message
       </button>

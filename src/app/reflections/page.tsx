@@ -67,7 +67,7 @@ export default function ReflectionsPage() {
             href="https://www.linkedin.com/in/ehis1/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 px-6 py-3 border-2 border-cream text-cream text-sm font-semibold rounded-md hover:bg-cream hover:text-rust transition-colors whitespace-nowrap"
+            className="flex-shrink-0 inline-flex items-center justify-center px-6 py-3 border-2 border-cream text-cream text-sm font-semibold rounded-md hover:bg-cream hover:text-rust transition-colors duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream focus-visible:ring-offset-2 focus-visible:ring-offset-rust"
           >
             Follow on LinkedIn
           </a>

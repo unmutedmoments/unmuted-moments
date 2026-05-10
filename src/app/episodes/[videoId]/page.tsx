@@ -155,7 +155,7 @@ export default async function EpisodePage({ params }: Props) {
         <nav className="mb-3 text-sm text-charcoal/60 flex items-center gap-2 flex-wrap">
           <Link
             href="/episodes"
-            className="hover:text-rust transition-colors font-medium"
+            className="hover:text-rust transition-colors font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 rounded"
           >
             Episodes
           </Link>
@@ -167,7 +167,7 @@ export default async function EpisodePage({ params }: Props) {
         <div className="mb-6">
           <Link
             href="/episodes"
-            className="inline-flex items-center gap-1 text-sm text-rust font-semibold hover:text-rust-dark transition-colors"
+            className="inline-flex items-center gap-1 text-sm text-rust font-semibold hover:text-rust-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 rounded"
           >
             ← Back to All Episodes
           </Link>
@@ -195,13 +195,13 @@ export default async function EpisodePage({ params }: Props) {
           <ShareButtons title={video.title} />
         </div>
 
-        {/* Listen buttons */}
-        <div className="flex flex-wrap gap-3 mb-10">
+        {/* Listen buttons — Tier 3: full-width on mobile, stacked, inline on desktop */}
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10">
           <a
             href="https://open.spotify.com/show/6MfIxIeK3FP8Tv6cGUZrCP"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             <SpotifyIcon size={18} />
             Listen on Spotify
@@ -210,7 +210,7 @@ export default async function EpisodePage({ params }: Props) {
             href="https://podcasts.apple.com/us/podcast/unmuted-moments/id1798134705"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             <ApplePodcastsIcon size={18} />
             Listen on Apple Podcasts
@@ -219,7 +219,7 @@ export default async function EpisodePage({ params }: Props) {
             href="https://music.amazon.com/podcasts/0d336eb6-da95-4ca6-b408-220c5138a2a0/unmuted-moments"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             <AmazonMusicIcon size={18} />
             Listen on Amazon Music

@@ -133,11 +133,12 @@ export default function CareerPage() {
           <p className="text-sand/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
             I translate insider knowledge into clear steps you can actually use.
           </p>
+          {/* Tier 1: full-width on mobile, auto on desktop */}
           <a
             href={CONSULT_HREF}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             Book a Consultation
           </a>
@@ -323,11 +324,12 @@ export default function CareerPage() {
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-ink mb-8">
             Ready to map your next move?
           </h2>
+          {/* Tier 1: full-width on mobile, auto on desktop */}
           <a
             href={CONSULT_HREF}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
           >
             Book a Consultation
           </a>

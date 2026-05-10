@@ -72,7 +72,7 @@ export default function EpisodesClient({ videos }: Props) {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 ${
               activeCategory === cat
                 ? "bg-rust text-white"
                 : "bg-sand/40 text-charcoal hover:bg-sand"
@@ -83,13 +83,13 @@ export default function EpisodesClient({ videos }: Props) {
         ))}
       </div>
 
-      {/* YouTube CTA */}
+      {/* YouTube CTA — Tier 2: auto-width, rust bg, centered */}
       <div className="mb-4 mt-1">
         <a
           href="https://www.youtube.com/@UnmutedMoments"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-7 py-3.5 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors shadow-sm"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -109,9 +109,10 @@ export default function EpisodesClient({ videos }: Props) {
 
           {hasMore && (
             <div className="mt-10 text-center">
+              {/* Tier 2: centered, auto-width, rust bg */}
               <button
                 onClick={() => setShowAll(true)}
-                className="px-8 py-3 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200"
+                className="inline-flex items-center justify-center px-6 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
               >
                 Load More Episodes ({filtered.length - initialCount} remaining)
               </button>
@@ -126,7 +127,7 @@ export default function EpisodesClient({ videos }: Props) {
               setSearch("");
               setActiveCategory("All");
             }}
-            className="text-sm font-semibold text-rust hover:text-rust-dark underline transition-colors"
+            className="text-sm font-semibold text-rust hover:text-rust-dark underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 rounded"
           >
             Clear filters
           </button>

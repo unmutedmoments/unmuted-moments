@@ -47,7 +47,7 @@ export default function ReflectionsClient({ posts }: Props) {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2 ${
               activeCategory === cat
                 ? "bg-rust text-white"
                 : "bg-sand/40 text-charcoal hover:bg-sand"
@@ -88,9 +88,10 @@ export default function ReflectionsClient({ posts }: Props) {
                   </span>
                 </div>
                 <div className="flex-shrink-0">
+                  {/* Tier 2: auto-width, rust bg, white text */}
                   <Link
                     href={`/reflections/${post.slug}`}
-                    className="inline-flex items-center px-5 py-2.5 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors whitespace-nowrap"
+                    className="inline-flex items-center justify-center px-5 py-3 bg-rust text-white text-sm font-semibold rounded-md hover:bg-rust-dark transition-colors duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                   >
                     Read More →
                   </Link>

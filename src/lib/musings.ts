@@ -11,6 +11,56 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "The Maple We're Losing",
+    slug: "the-maple-were-losing",
+    category: "Career",
+    date: "May 29, 2026",
+    excerpt: "We lost one of our maple trees. Not technically yet.",
+    content: `We lost one of our maple trees.
+
+Not technically yet.
+
+But every arborist who's come to look at it says the same thing: It's dead.
+
+We have five maples in our backyard. Each one shades a different part of the yard. One has a picnic table under it.
+
+On warm days, it turns that part of our backyard into a nice spot to eat lunch.
+
+That's the one we're losing.
+
+When we first moved in, it looked a little sickly. We had someone come check it out, and they said it was fine, so we left it alone.
+
+Then spring came. The leaves on the other four trees filled in, but this one did not.
+
+I called an arborist. He said it was dead and had to come down. So I called another. Then another. I was looking for someone to tell me what I wanted to hear.
+
+No one did.
+
+Maples are supposed to live 60+ years. This one is only about 15, so I keep wondering what we missed.
+
+Maybe nothing could have saved it. But maybe there were things we could have done earlier.
+
+Fixing what you already have feels boring. Until the thing you failed to maintain becomes impossible to replace.
+
+And I can't buy another 15-year-old maple and plant it tomorrow.
+
+It made me think about how we treat the things we already have including our careers.
+
+We spend so much energy wondering if the grass is greener somewhere else. As they say, the grass is greener where you water it.
+
+I know how that sounds coming from someone at a company a lot of people are trying to get into.
+
+And sometimes the grass really is greener somewhere else. Sometimes the tree is dead, and the right move is to plant a new one.
+
+I'm not saying stay no matter what.
+
+I'm saying don't let something you'd want to keep die while you're staring over the fence.
+
+So if you're somewhere that doesn't feel like enough right now, tend to it before you walk away.
+
+Some things take years to grow. And some don't grow back at all.`,
+  },
+  {
     title: "Undervalued People Outperform",
     slug: "undervalued-people-outperform",
     category: "Career",

@@ -423,7 +423,7 @@ So if you're in that survival phase right now, keep going. It won't last forever
     title: "How Can You Dream When You Can't Sleep?",
     slug: "how-can-you-dream-when-you-cant-sleep",
     category: "Immigration",
-    date: "December 2025",
+    date: "December 15, 2025",
     excerpt:
       "How can you dream when you can't sleep? I grew up in a neighborhood where break-ins were common.",
     content: `How can you dream when you can't sleep?
@@ -634,7 +634,7 @@ Every deal teaches you something new — about strategy, about business, and abo
     title: "What Does a CPA Actually Do?",
     slug: "what-does-a-cpa-actually-do",
     category: "Career",
-    date: "August 2024",
+    date: "August 15, 2024",
     excerpt:
       "What does a CPA even do? I started my career as a CPA and every time I told someone, the response was always the same.",
     content: `What does a CPA even do? I started my career as a CPA and every time I told someone I was a CPA, the response was always the same: "Oh nice, can you help me with my taxes?"
@@ -692,7 +692,7 @@ Performance matters. But if you only focus on being technically great, you are l
     title: "What Does It Take to Succeed in Big Tech?",
     slug: "what-does-it-take-to-succeed-in-big-tech",
     category: "Career",
-    date: "November 2025",
+    date: "November 15, 2025",
     excerpt:
       "What does it take to be successful in Big Tech? There's no single formula, but there are habits that increase your odds.",
     content: `What does it take to be successful in Big Tech?
@@ -738,7 +738,7 @@ Stay ready. But stay kind to yourself too.`,
     title: "The Arrival Fallacy",
     slug: "the-arrival-fallacy",
     category: "Career",
-    date: "October 2025",
+    date: "October 15, 2025",
     excerpt:
       "Have you ever reached a big milestone thinking it will finally make you happy... and for a moment it does, but then life feels exactly the same?",
     content: `Have you ever reached a big milestone thinking "this will finally make me happy"... and for a moment it does, but then life feels exactly the same?

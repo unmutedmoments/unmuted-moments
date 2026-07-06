@@ -161,7 +161,7 @@ export default async function HomePage() {
               </p>
 
               {/* Tier 1 CTA pair — full-width on mobile, stacked, gap-4 */}
-              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <LatestEpisodeButton latestVideoId={latestVideo?.id} />
                 <Link
                   href="/my-story"

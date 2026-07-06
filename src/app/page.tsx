@@ -165,7 +165,7 @@ export default async function HomePage() {
                 <LatestEpisodeButton latestVideoId={latestVideo?.id} />
                 <Link
                   href="/my-story"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 border-2 border-rust text-rust font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 border-2 border-rust text-rust text-sm font-semibold rounded-md hover:bg-rust hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
                 >
                   Meet the Host
                 </Link>

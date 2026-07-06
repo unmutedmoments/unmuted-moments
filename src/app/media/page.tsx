@@ -58,6 +58,14 @@ const allAppearances = [
 
 const press = [
   {
+    outlet: "Forbes",
+    title: "3 Ways Your Pre-MBA Summer Can Boost Your Career",
+    date: "June 29, 2026",
+    link: "https://www.forbes.com/sites/marlenacorcoran/2026/06/29/3-ways-your-pre-mba-summer-can-boost-your-career/",
+    description:
+      "Featured in Forbes on how the pre-MBA summer can shape a career. I shared how pre-MBA programs led to my first investment banking role and, later, my role at Google, along with why the connections you make along the way can matter as much as the offers.",
+  },
+  {
     outlet: "Tribes and History",
     title: "Ehis Akhetuamhen on Finding Your Voice and Betting on Yourself",
     date: "March 5, 2025",

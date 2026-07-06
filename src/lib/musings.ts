@@ -11,6 +11,76 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "What America Means to Me",
+    slug: "what-america-means-to-me",
+    category: "Immigration",
+    date: "July 4, 2026",
+    excerpt: "What is America to me? This morning, as I hung a wreath on my front door for America's 250th birthday, I found myself reflecting on what this country has meant to me as an immigrant.",
+    content: `What is America to me?
+
+This morning, as I hung a wreath on my front door for America's 250th birthday, I found myself reflecting on what this country has meant to me as an immigrant.
+
+For me, America has never been about politics.
+
+It has always been about people.
+
+And one person embodies it best for me:
+
+Dr. Michelle Tooley.
+
+Michelle was a religion professor at Berea College, my favorite professor anywhere I have studied.
+
+I got an F on my first quiz in her class. I was a freshman international student, and I was not ready for her pop quizzes.
+
+She believed we all had gifts to share with the world.
+
+Her gift was seeing people others overlooked.
+
+I was one of those people.
+
+I did not have the best SAT scores when I applied to Berea.
+
+But years before I ever met her, Michelle sat on the international admissions committee and advocated for me.
+
+She did not know me.
+
+But she saw something worth betting on.
+
+That bet changed my life.
+
+When I was stuck on campus during winter breaks with no family in America, Michelle opened her home to me and treated me like family.
+
+Because of her, I saw America beyond a small rural campus in Kentucky, from Louisville to Cincinnati to D.C. to Chicago.
+
+Michelle helped me find my voice.
+
+She would tell me, "Ehis, you have to project!"
+
+She was not talking about volume.
+
+She wanted me to own my space, believe I had something worth saying, and let that belief come through.
+
+In many ways, I am still trying to project enough for Michelle.
+
+She passed away about 10 years ago, after a long battle with melanoma, faithful to the end to her students, her church, and her belief in just, loving communities.
+
+Michelle called herself a daughter of the South.
+
+She knew America was not perfect.
+
+But she believed in justice, empowerment, and the possibility of becoming better.
+
+That is what America means to me.
+
+Not perfection, but possibility.
+
+The land where, at its best, someone can believe in you before you know how to believe in yourself.
+
+I am proud to be a part of this country.
+
+Happy 250th birthday, America 🇺🇸`,
+  },
+  {
     title: "The Real Blessing of Fatherhood",
     slug: "the-real-blessing-of-fatherhood",
     category: "Personal Development",

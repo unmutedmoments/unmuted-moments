@@ -11,6 +11,42 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "My Experience With Executive Coaching",
+    slug: "my-experience-with-executive-coaching",
+    category: "Career",
+    date: "June 8, 2026",
+    excerpt: "I started working with an executive coach about six months ago. Before that, I thought executive coaching was mainly for... executives.",
+    content: `I started working with an executive coach about six months ago.
+
+Before that, I thought executive coaching was mainly for... executives. CEO types and people running huge teams.
+
+Six months in, I see it completely differently.
+
+One of the biggest things I've learned is that career growth is rarely about how fast you go. It's about the direction you're traveling.
+
+It's like driving fast without checking Google Maps because you assume you know the route. You can feel like you are making good time and still end up somewhere you did not mean to be because you never confirmed the actual destination.
+
+I think careers can work the same way.
+
+So much of this work has been having someone help me slow down enough to make decisions with the end in mind.
+
+It seems like duh, isn't this a basic thing any driven professional should do? Maybe in theory but in practice, I bet a lot of us don't.
+
+Before coaching, I could make decisions by reacting to whatever was right in front of me. Coaching has helped me step back and ask what I actually want, what I can control, and the kind of leader I want to become.
+
+It has also pushed me into conversations at work I probably would have kept avoiding. I have come out of some of those in a better position, with a clearer view of my career and where I am headed.
+
+Career growth is rarely just about the next role. It is about growing confidence in what you are doing, and being rooted enough that you are not swerved by every passing wind.
+
+Your life is your canvas, and most of us hand other people the brush without realizing it. A great coach helps you take the brush back, so you are not just executing someone else's plan but designing your own with the end in mind.
+
+So if you are doing well on paper but quietly unsure where it is all heading, you might not need a faster strategy. You might need someone who helps you cut through the noise and see how much of this you actually get to decide.
+
+This might sound like a midlife crisis. I promise it is not. :)
+
+You don't have to get there the fastest. You just have to be going the right way.`,
+  },
+  {
     title: "The Maple We're Losing",
     slug: "the-maple-were-losing",
     category: "Career",

@@ -104,8 +104,47 @@ export default function MediaPage() {
         </div>
       </section>
 
-      {/* ─── PODCAST APPEARANCES ─── */}
+      {/* ─── PRESS & ARTICLES ─── */}
       <section className="bg-warm py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-8">
+            Press Coverage
+          </p>
+          <div className="space-y-5">
+            {press.map((article, i) => (
+              <a
+                key={i}
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-5 bg-white hover:bg-cream rounded-xl p-6 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
+              >
+                <div className="flex-1">
+                  <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
+                    {article.outlet} — {article.date}
+                  </p>
+                  <h3 className="font-playfair text-xl font-bold text-ink group-hover:text-rust transition-colors mb-2">
+                    {article.title}
+                  </h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed">
+                    {article.description}
+                  </p>
+                </div>
+                <div className="flex-shrink-0 mt-1 text-charcoal/30 group-hover:text-rust transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PODCAST APPEARANCES ─── */}
+      <section className="bg-warm py-16 md:py-20 border-t border-sand/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-8">
             Podcast Appearances
@@ -143,45 +182,6 @@ export default function MediaPage() {
                   </a>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── PRESS & ARTICLES ─── */}
-      <section className="bg-warm py-16 md:py-20 border-t border-sand/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-8">
-            Press Coverage
-          </p>
-          <div className="space-y-5">
-            {press.map((article, i) => (
-              <a
-                key={i}
-                href={article.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-5 bg-white hover:bg-cream rounded-xl p-6 transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rust focus-visible:ring-offset-2"
-              >
-                <div className="flex-1">
-                  <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-2">
-                    {article.outlet} — {article.date}
-                  </p>
-                  <h3 className="font-playfair text-xl font-bold text-ink group-hover:text-rust transition-colors mb-2">
-                    {article.title}
-                  </h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed">
-                    {article.description}
-                  </p>
-                </div>
-                <div className="flex-shrink-0 mt-1 text-charcoal/30 group-hover:text-rust transition-colors">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
-                </div>
-              </a>
             ))}
           </div>
         </div>

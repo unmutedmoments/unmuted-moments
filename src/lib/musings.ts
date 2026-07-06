@@ -11,6 +11,58 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "The Real Blessing of Fatherhood",
+    slug: "the-real-blessing-of-fatherhood",
+    category: "Personal Development",
+    date: "June 29, 2026",
+    excerpt: "What's your favorite thing about being a father? I got that question a few times around Father's Day. If I'm honest, my first thoughts were not sentimental.",
+    content: `What's your favorite thing about being a father?
+
+I got that question a few times around Father's Day.
+
+If I'm honest, my first thoughts were not sentimental.
+
+I thought about interrupted sleep, tantrums, getting my kids to eat their food, and stopping them from bouncing on the couch.
+
+So I smiled and said, "It's a blessing." Which is true. But not the full answer.
+
+The more I've thought about it, the more I've realized fatherhood has taught me to dream again.
+
+Growing up in Nigeria, we didn't have a TV for most of my childhood.
+
+Radio was our entertainment.
+
+My hero was DJ Sidney Shocker.
+
+For years, I dreamed of becoming a DJ because I loved stories, music, and connecting with people.
+
+Life took me toward Microsoft Excel instead :)
+
+But fatherhood has reminded me what it feels like to see the world as wide open again.
+
+As adults, we become practical especially when you have family who are relying on you. We settle into who we think we are.
+
+Kids are the opposite. Everything is still on the table.
+
+Will they love soccer or singing? Will a road trip unlock something new?
+
+I'm experiencing things with fresh eyes because they're experiencing them for the first time.
+
+I don't just get to watch them discover the world.
+
+I get to rediscover it too.
+
+I never became a DJ, but I still found my way to telling stories through my podcast.
+
+Maybe the dream did not disappear. Maybe it just evolved.
+
+That may be the real blessing of fatherhood.
+
+A chance to imagine again, to be curious again.
+
+To dream again.`,
+  },
+  {
     title: "My Experience With Executive Coaching",
     slug: "my-experience-with-executive-coaching",
     category: "Career",

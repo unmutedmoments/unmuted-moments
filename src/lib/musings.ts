@@ -47,6 +47,36 @@ But for some people, the freedom to up and move is the most important risk to so
 Either way, I think the important thing is knowing what matters most to you.`,
   },
   {
+    title: "Making Fewer Decisions",
+    slug: "making-fewer-decisions",
+    category: "Personal Development",
+    date: "August 11, 2026",
+    excerpt: '"Tomorrow will be better" is one of my favorite lies to tell myself. In the journey of becoming who you want to be, we all know consistency matters.',
+    content: `"Tomorrow will be better" is one of my favorite lies to tell myself.
+
+In the journey of becoming who you want to be, we all know consistency matters.
+
+For me, one constant area of friction is staying fit.
+
+I say it's important to me, but I'll take the first excuse not to go to the gym: "It's raining this morning," "I'll have an important work project that's more urgent."
+
+"Tomorrow will be better."
+
+Economists have a term for this: stated preferences vs. revealed preferences. My stated preference is that staying fit matters to me.
+
+My revealed preference is that when fitness competes with convenience, work, comfort, or food I enjoy, it doesn't always win.
+
+We all have areas like this where what we say is different from our actions, whether related to health, family, or work, and sometimes it's uncomfortable to admit.
+
+The times I've been most successful are when I simplify the decision. If it's the gym: 7 a.m. Monday, Wednesday and Friday. No room for debating it every morning.
+
+Same thing with food. Pick a simple breakfast or dinner, whatever your anchor meal is, and stick to it without debating between multiple choices.
+
+It can get boring, but the times I've made the most progress, including losing nearly 30 pounds once, were when I stopped giving myself so many decisions to make.
+
+Sometimes becoming who you want to be is less about willpower and more about making fewer decisions.`,
+  },
+  {
     title: "What America Means to Me",
     slug: "what-america-means-to-me",
     category: "Immigration",

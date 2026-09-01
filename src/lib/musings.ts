@@ -77,6 +77,44 @@ It can get boring, but the times I've made the most progress, including losing n
 Sometimes becoming who you want to be is less about willpower and more about making fewer decisions.`,
   },
   {
+    title: "Changing Lanes",
+    slug: "changing-lanes",
+    category: "Personal Development",
+    date: "July 27, 2026",
+    excerpt: "I have a habit when I am driving. If I know I need to make a turn a few miles ahead, I start worrying about getting into the correct lane immediately.",
+    content: `I have a habit when I am driving.
+
+If I know I need to make a turn a few miles ahead, I start worrying about getting into the correct lane immediately. Even when the turn is nowhere close.
+
+Once I'm in that lane, I feel relieved. But sometimes that means sitting in slower traffic or refusing to move into an open lane because I'm worried no one will let me back in later.
+
+Most of the time, when I simply drive in the lane that makes sense and move over closer to the turn, it works out just fine.
+
+I think we approach our careers the same way.
+
+We take a job because we believe it is the right lane for the job we want three moves from now (you've probably heard: just suffer in it for a few years and it will open doors for you later down the road).
+
+We pass up interesting opportunities because they don't appear to follow the most direct route.
+
+We try to position ourselves years in advance for a turn we may not even want by the time we reach it.
+
+I have taken opportunities I did not enjoy because I was certain of where they led, and watched people arrive at the same place using other roads.
+
+Of course, planning matters. Some turns really do require getting into the right lane early, like if you want to be a doctor or a lawyer, you do need an MD or JD. There is no merging your way into that at the last minute.
+
+But many careers aren't like that.
+
+Not every decision needs to be optimized around a future we cannot predict. There are usually multiple lanes, and sometimes entirely different roads, that reach the same destination.
+
+Maybe we do not always need to know the right lane several miles before the turn.
+
+Sometimes we just need to keep moving, pay attention, and trust ourselves to change lanes when the turn gets closer.
+
+So if you are sitting in a lane you chose years ago for a turn you are no longer sure you want, you are allowed to look around and see what else is open.
+
+You don't have to choose every lane miles in advance.`,
+  },
+  {
     title: "What America Means to Me",
     slug: "what-america-means-to-me",
     category: "Immigration",

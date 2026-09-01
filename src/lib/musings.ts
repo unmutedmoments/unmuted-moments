@@ -115,6 +115,48 @@ So if you are sitting in a lane you chose years ago for a turn you are no longer
 You don't have to choose every lane miles in advance.`,
   },
   {
+    title: "Liquid vs Illiquid Careers: Start With Yourself",
+    slug: "liquid-vs-illiquid-careers-start-with-yourself",
+    category: "Career",
+    date: "July 20, 2026",
+    excerpt: '"If I had the opportunity, should I join a startup or an established company?" Someone recently asked me that question. I gave them a long, winding answer that eventually came down to: It depends.',
+    content: `"If I had the opportunity, should I join a startup or an established company?"
+
+Someone recently asked me that question.
+
+I gave them a long, winding answer that eventually came down to: It depends.
+
+Afterward, I remembered a piece by Vaishnav Sunil on liquid and illiquid careers. It provides a much cleaner framework for answering the question.
+
+Here, liquidity is not in the sense of cash or salary. It is about how easily your experience translates to the outside, like how easily the market can understand and value your experience.
+
+A more liquid career path is easier for potential employers to recognize.
+
+Think of someone who has worked at a well-known company like Goldman Sachs or Microsoft.
+
+Employers generally understand the training, standards, and type of work associated with those companies. The experience requires less explanation.
+
+A startup (especially the earlier stage and smaller ones) offers a more illiquid path.
+
+You may gain broader responsibility, move faster, and help build something from the ground up.
+
+But the value of that experience may be harder for an outsider to assess. You may have to work harder to explain what you did, what you learned, and why it matters.
+
+Early in my career, I leaned toward liquid paths.
+
+As an immigrant, I needed more than a company willing to sponsor my visa. I wanted a career path that felt predictable and safe.
+
+But that was my situation, not a universal rule.
+
+So when deciding between a startup and an established company, do not start with the company.
+
+Start with yourself.
+
+What environment helps you thrive?
+
+How much uncertainty can you afford?`,
+  },
+  {
     title: "What America Means to Me",
     slug: "what-america-means-to-me",
     category: "Immigration",

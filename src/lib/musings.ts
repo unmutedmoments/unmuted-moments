@@ -157,6 +157,46 @@ What environment helps you thrive?
 How much uncertainty can you afford?`,
   },
   {
+    title: "Scheduling My Stress",
+    slug: "scheduling-my-stress",
+    category: "Personal Development",
+    date: "July 7, 2026",
+    excerpt: "I am a recovering nervous wreck. And one thing that now helps me manage my stress is: Scheduling my stress.",
+    content: `I am a recovering nervous wreck.
+
+And one thing that now helps me manage my stress is:
+
+Scheduling my stress.
+
+I know that sounds ridiculous.
+
+But for most of my career, I've worried about everything.
+
+If I had a big meeting, a difficult conversation, a major decision, or a presentation coming up, I could spend days stressing about something that would last only 30 minutes.
+
+I'm by no means a physician, but if you think about it, a lot of bad habits and health conditions in our lives come from stress.
+
+So I started budgeting my stress.
+
+When something important is coming up, I tell myself: tomorrow evening from 8 to 10pm, I'll prepare for this.
+
+That's also my time to stress about it.
+
+During that window, I prepare and let myself worry, but outside that window, I am not thinking or stressing about it, especially when it's work stress that isn't life or death.
+
+When the worry comes, I tell myself: it's not our stress window yet. We have time to stress about this later.
+
+It sounds small, but it has helped me a lot.
+
+In general, I find that most of the disasters I worry about never actually happen.
+
+The hours I spent rehearsing imaginary conversations go to my kids now, and to my garden (and to watching the World Cup :).
+
+You can't cancel stress.
+
+But you can schedule it.`,
+  },
+  {
     title: "What America Means to Me",
     slug: "what-america-means-to-me",
     category: "Immigration",

@@ -11,6 +11,42 @@ export interface Musing {
 
 export const musings: Musing[] = [
   {
+    title: "Renting vs Buying a Home",
+    slug: "renting-vs-buying-a-home",
+    category: "Personal Development",
+    date: "August 17, 2026",
+    excerpt: "Renting a home can be riskier than buying a home. One of my business school professors once said this, and at first it seemed counterintuitive.",
+    content: `Renting a home can be riskier than buying a home.
+
+One of my business school professors once said this, and at first it seemed counterintuitive.
+
+For one, when you rent, your main expense is straightforward: it's your rent payments.
+
+You generally don't have to worry about replacing a roof, fixing an HVAC system, or paying to replace a leaky pipe, as your landlord covers those types of things.
+
+But on the other hand, homeownership requires more cash upfront for the down payment. You are also responsible for repairs and maintenance. And if you need to move, you can't just wait for your lease to expire and up and leave.
+
+So how could owning be less risky than renting?
+
+It depends on how you define risk.
+
+If risk means the volatility and predictability of your future housing costs, homeownership wins.
+
+To illustrate this, compare the largest part of the housing cost in each option. For renting, it's your rental payments, and for homeownership, it's your mortgage, which is typically a fixed-rate mortgage.
+
+If you rent, you are always exposed to your landlord increasing your rent. Hence, your rent is not as predictable as a fixed mortgage.
+
+One caveat here is that the time horizon also matters. If there is a chance you'll need to move within just a couple of years, closing costs, commissions, and other transaction costs could make renting a much better and less risky decision, as it gives you more optionality.
+
+Ultimately, this is a personal decision, and it comes down to what risk you are solving for.
+
+For people like me, owning a home is a mark of being "settled": you have a foundation to build from, literally and figuratively.
+
+But for some people, the freedom to up and move is the most important risk to solve for.
+
+Either way, I think the important thing is knowing what matters most to you.`,
+  },
+  {
     title: "What America Means to Me",
     slug: "what-america-means-to-me",
     category: "Immigration",

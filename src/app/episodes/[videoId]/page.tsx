@@ -1,4 +1,5 @@
 import { getVideoById, getVideosFromPlaylist, formatDate } from "@/lib/youtube";
+import { truncateGrapheme } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import EpisodeCard from "@/components/EpisodeCard";
 import ShareButtons from "@/components/ShareButtons";
@@ -13,7 +14,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const video = await getVideoById(params.videoId);
   if (!video) return { title: "Episode | Unmuted Moments" };
-  const description = video.description.slice(0, 155).trimEnd();
+  const description = truncateGrapheme(video.description, 155);
   const image = video.thumbnail
     ? { url: video.thumbnail, width: 1280, height: 720, alt: video.title }
     : { url: "https://unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" };
@@ -256,7 +257,7 @@ export default async function EpisodePage({ params }: Props) {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {related.map((v) => (
-                <EpisodeCard key={v.id} video={v} />
+                <EpisodeCard key={v.id} video={v} hideDescription />
               ))}
             </div>
           </div>

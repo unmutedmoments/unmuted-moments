@@ -1,19 +1,28 @@
 "use client";
 import { useEffect } from "react";
 
+const CANONICAL_HOST = "unmutedmomentspodcast.com";
+
 /**
- * Injects a noindex meta tag when the page is served from a *.netlify.app
- * preview URL, preventing preview deployments from competing with the
- * canonical domain in search results.
+ * Injects a noindex,nofollow meta tag whenever the page is served from any
+ * hostname other than the canonical production domain. This blocks mirror
+ * sites, Netlify preview URLs (*.netlify.app), and any other non-canonical
+ * hosts from competing in search results.
+ *
+ * localhost (including any port) is explicitly allowed so local development
+ * continues to work.
  */
 export default function NetlifyNoIndex() {
   useEffect(() => {
-    if (window.location.hostname.endsWith(".netlify.app")) {
-      const meta = document.createElement("meta");
-      meta.name = "robots";
-      meta.content = "noindex,nofollow";
-      document.head.appendChild(meta);
-    }
+    const host = window.location.hostname;
+    const isCanonical = host === CANONICAL_HOST;
+    const isLocalhost = host === "localhost" || host === "127.0.0.1" || host.startsWith("192.168.");
+    if (isCanonical || isLocalhost) return;
+
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex,nofollow";
+    document.head.appendChild(meta);
   }, []);
   return null;
 }

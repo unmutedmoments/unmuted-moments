@@ -1,4 +1,5 @@
 import { YouTubeVideo } from "./types";
+import { truncateAtWord } from "./utils";
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
@@ -241,4 +242,19 @@ export function formatDuration(seconds: number): string {
 
 export async function getVideosByIds(ids: string[]): Promise<YouTubeVideo[]> {
   return await fetchVideoDetails(ids);
+}
+
+// Matches the podcast tagline used as boilerplate at the end of YouTube descriptions.
+const CARD_BOILERPLATE_RE = /because the world needs your voice/i;
+
+/**
+ * Returns a short excerpt suitable for an episode card.
+ * Strips everything from "Because the world needs your voice." onward,
+ * then truncates at a word boundary using emoji-safe grapheme segmentation.
+ */
+export function excerptDescription(desc: string, maxLen = 120): string {
+  const cutIdx = desc.search(CARD_BOILERPLATE_RE);
+  const trimmed = (cutIdx !== -1 ? desc.slice(0, cutIdx) : desc).trim();
+  if (!trimmed) return "";
+  return truncateAtWord(trimmed, maxLen);
 }

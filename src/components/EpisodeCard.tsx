@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { formatDateShort, formatDuration, stripTitle } from "@/lib/youtube";
+import { formatDateShort, formatDuration, stripTitle, excerptDescription } from "@/lib/youtube";
 import { YouTubeVideo } from "@/lib/types";
 
 interface Props {
@@ -42,7 +42,7 @@ export default function EpisodeCard({ video, hideDescription = false }: Props) {
           </h3>
           {!hideDescription && video.description && (
             <p className="mt-2 text-sm text-charcoal/70 line-clamp-2 leading-relaxed">
-              {video.description}
+              {excerptDescription(video.description)}
             </p>
           )}
         </div>

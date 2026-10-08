@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getMusing, getRelatedMusings, musings } from "@/lib/musings";
 import ShareButtons from "@/components/ShareButtons";
 import type { Metadata } from "next";
+import { truncateAtWord } from "@/lib/utils";
 
 interface Props {
   params: { slug: string };
@@ -15,7 +16,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getMusing(params.slug);
   if (!post) return { title: "Reflection | Ehis Akhetuamhen" };
-  const description = post.content.replace(/\s+/g, " ").trim().slice(0, 155).trimEnd();
+  const description = post.excerpt?.trim()
+    ? post.excerpt.trim()
+    : truncateAtWord(post.content.replace(/\s+/g, " ").trim(), 155);
   return {
     title: `${post.title} | Ehis Akhetuamhen`,
     description,

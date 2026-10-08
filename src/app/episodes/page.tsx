@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Browse all episodes of Unmuted Moments — honest conversations with immigrants, professionals, and leaders about finding and owning their voice.",
   alternates: {
-    canonical: "https://www.unmutedmomentspodcast.com/episodes",
+    canonical: "https://unmutedmomentspodcast.com/episodes",
   },
   openGraph: {
     title: "Episodes | Unmuted Moments Podcast",
     description:
       "Browse all episodes of Unmuted Moments — honest conversations with immigrants, professionals, and leaders about finding and owning their voice.",
-    url: "https://www.unmutedmomentspodcast.com/episodes",
+    url: "https://unmutedmomentspodcast.com/episodes",
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Episodes | Unmuted Moments Podcast",
     description:
       "Browse all episodes of Unmuted Moments — honest conversations with immigrants, professionals, and leaders about finding and owning their voice.",
-    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+    images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

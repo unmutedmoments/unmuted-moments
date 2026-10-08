@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Honest takes on the immigrant journey, career growth, and personal development from Ehis Akhetuamhen.",
   alternates: {
-    canonical: "https://www.unmutedmomentspodcast.com/reflections",
+    canonical: "https://unmutedmomentspodcast.com/reflections",
   },
   openGraph: {
     title: "Reflections | Unmuted Moments",
     description:
       "Honest takes on the immigrant journey, career growth, and personal development from Ehis Akhetuamhen.",
-    url: "https://www.unmutedmomentspodcast.com/reflections",
+    url: "https://unmutedmomentspodcast.com/reflections",
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Reflections | Unmuted Moments",
     description:
       "Honest takes on the immigrant journey, career growth, and personal development from Ehis Akhetuamhen.",
-    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+    images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Finance career guidance from Ehis Akhetuamhen — 12+ years across Big 4, Wall Street, and Big Tech. Book a 1:1 consultation.",
   alternates: {
-    canonical: "https://www.unmutedmomentspodcast.com/career",
+    canonical: "https://unmutedmomentspodcast.com/career",
   },
   openGraph: {
     title: "Career Advice | Unmuted Moments",
     description:
       "Finance career guidance from Ehis Akhetuamhen — 12+ years across Big 4, Wall Street, and Big Tech. Book a 1:1 consultation.",
-    url: "https://www.unmutedmomentspodcast.com/career",
+    url: "https://unmutedmomentspodcast.com/career",
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Career Advice | Unmuted Moments",
     description:
       "Finance career guidance from Ehis Akhetuamhen — 12+ years across Big 4, Wall Street, and Big Tech. Book a 1:1 consultation.",
-    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+    images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 

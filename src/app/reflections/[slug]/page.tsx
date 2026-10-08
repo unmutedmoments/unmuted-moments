@@ -19,21 +19,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.title} | Unmuted Moments`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
+      canonical: `https://unmutedmomentspodcast.com/reflections/${post.slug}`,
     },
     openGraph: {
       title: `${post.title} | Unmuted Moments`,
       description: post.excerpt,
-      url: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
+      url: `https://unmutedmomentspodcast.com/reflections/${post.slug}`,
       type: "article",
       siteName: "Unmuted Moments",
-      images: [{ url: "https://www.unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
+      images: [{ url: "https://unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${post.title} | Unmuted Moments`,
       description: post.excerpt,
-      images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+      images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
     },
   };
 }
@@ -60,19 +60,19 @@ export default function ReflectionPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
-    url: `https://www.unmutedmomentspodcast.com/reflections/${post.slug}`,
+    url: `https://unmutedmomentspodcast.com/reflections/${post.slug}`,
     datePublished: post.date,
     description: post.excerpt,
     articleSection: post.category,
     author: {
       "@type": "Person",
       name: "Ehis Akhetuamhen",
-      url: "https://www.unmutedmomentspodcast.com/my-story",
+      url: "https://unmutedmomentspodcast.com/my-story",
     },
     publisher: {
       "@type": "Organization",
       name: "Unmuted Moments",
-      url: "https://www.unmutedmomentspodcast.com",
+      url: "https://unmutedmomentspodcast.com",
     },
     inLanguage: "en-US",
   };

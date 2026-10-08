@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.unmutedmomentspodcast.com/sitemap.xml",
+    sitemap: "https://unmutedmomentspodcast.com/sitemap.xml",
   };
 }

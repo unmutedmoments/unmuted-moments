@@ -2,14 +2,16 @@ import type { MetadataRoute } from "next";
 import { getVideosFromPlaylist } from "@/lib/youtube";
 import { musings } from "@/lib/musings";
 
-const BASE_URL = "https://www.unmutedmomentspodcast.com";
+export const revalidate = 86400;
+
+const BASE_URL = "https://unmutedmomentspodcast.com";
 const PLAYLIST_ID = "PLA41Q9OxQLzxSv_mSzqA8OaSeFvoc-efE";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static core pages
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: `${BASE_URL}/`,
+      url: BASE_URL,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1.0,

@@ -13,20 +13,20 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const video = await getVideoById(params.videoId);
   if (!video) return { title: "Episode | Unmuted Moments" };
-  const description = video.description.slice(0, 160).trimEnd();
+  const description = video.description.slice(0, 155).trimEnd();
   const image = video.thumbnail
     ? { url: video.thumbnail, width: 1280, height: 720, alt: video.title }
-    : { url: "https://www.unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" };
+    : { url: "https://unmutedmomentspodcast.com/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" };
   return {
     title: `${video.title} | Unmuted Moments`,
     description,
     alternates: {
-      canonical: `https://www.unmutedmomentspodcast.com/episodes/${video.id}`,
+      canonical: `https://unmutedmomentspodcast.com/episodes/${video.id}`,
     },
     openGraph: {
       title: `${video.title} | Unmuted Moments`,
       description,
-      url: `https://www.unmutedmomentspodcast.com/episodes/${video.id}`,
+      url: `https://unmutedmomentspodcast.com/episodes/${video.id}`,
       type: "video.other",
       siteName: "Unmuted Moments",
       images: [image],
@@ -122,24 +122,29 @@ export default async function EpisodePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: video.title,
-    url: `https://www.unmutedmomentspodcast.com/episodes/${video.id}`,
+    url: `https://unmutedmomentspodcast.com/episodes/${video.id}`,
     datePublished: video.publishedAt,
     description: video.description.slice(0, 500),
     image: video.thumbnail,
+    associatedMedia: {
+      "@type": "VideoObject",
+      embedUrl: `https://www.youtube.com/embed/${video.id}`,
+      url: `https://www.youtube.com/watch?v=${video.id}`,
+    },
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Unmuted Moments",
-      url: "https://www.unmutedmomentspodcast.com/episodes",
+      url: "https://unmutedmomentspodcast.com/episodes",
     },
     author: {
       "@type": "Person",
       name: "Ehis Akhetuamhen",
-      url: "https://www.unmutedmomentspodcast.com/my-story",
+      url: "https://unmutedmomentspodcast.com/my-story",
     },
     publisher: {
       "@type": "Organization",
       name: "Unmuted Moments",
-      url: "https://www.unmutedmomentspodcast.com",
+      url: "https://unmutedmomentspodcast.com",
     },
   };
 

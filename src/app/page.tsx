@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description:
     "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
   alternates: {
-    canonical: "https://www.unmutedmomentspodcast.com/",
+    canonical: "https://unmutedmomentspodcast.com",
   },
   openGraph: {
     title: "Unmuted Moments | Because the World Needs Your Voice",
     description:
       "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
-    url: "https://www.unmutedmomentspodcast.com/",
+    url: "https://unmutedmomentspodcast.com",
     type: "website",
     siteName: "Unmuted Moments",
     images: [{ url: "/og-image.jpg", width: 1230, height: 630, alt: "Unmuted Moments" }],
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Unmuted Moments | Because the World Needs Your Voice",
     description:
       "Unmuted Moments is a podcast for immigrants and first-gen professionals. Real stories and strategies to grow your confidence, career, and voice — hosted by Ehis Akhetuamhen.",
-    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+    images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 
@@ -80,13 +80,13 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Unmuted Moments",
-    url: "https://www.unmutedmomentspodcast.com",
+    url: "https://unmutedmomentspodcast.com",
     description:
       "A podcast exploring the journey to finding and owning your voice through conversations with immigrants, leaders, and professionals.",
     potentialAction: {
       "@type": "SearchAction",
       target:
-        "https://www.unmutedmomentspodcast.com/episodes?q={search_term_string}",
+        "https://unmutedmomentspodcast.com/episodes?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -95,7 +95,7 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Ehis Akhetuamhen",
-    url: "https://www.unmutedmomentspodcast.com/my-story",
+    url: "https://unmutedmomentspodcast.com/my-story",
     jobTitle: "Podcast Host, M&A Finance Professional",
     description:
       "Nigerian-American podcast host, M&A Finance leader at Google, and former Goldman Sachs and William Blair investment banking professional. Host of Unmuted Moments.",

@@ -3,6 +3,7 @@ import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NetlifyNoIndex from "@/components/NetlifyNoIndex";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.unmutedmomentspodcast.com"),
+  metadataBase: new URL("https://unmutedmomentspodcast.com"),
   title: {
     default: "Unmuted Moments | Because the World Needs Your Voice",
     template: "%s | Unmuted Moments",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://www.unmutedmomentspodcast.com/og-image.jpg"],
+    images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
   },
 };
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${dmSans.variable} font-dm antialiased bg-cream text-ink`}
       >
+        <NetlifyNoIndex />
         <Navbar />
         <main>{children}</main>
         <Footer />

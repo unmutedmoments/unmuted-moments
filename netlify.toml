@@ -10,3 +10,8 @@
 
 [build.processing]
   skip_processing = false
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

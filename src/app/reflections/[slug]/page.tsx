@@ -14,16 +14,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getMusing(params.slug);
-  if (!post) return { title: "Reflection | Unmuted Moments" };
+  if (!post) return { title: "Reflection | Ehis Akhetuamhen" };
+  const description = post.content.replace(/\s+/g, " ").trim().slice(0, 155).trimEnd();
   return {
-    title: `${post.title} | Unmuted Moments`,
-    description: post.excerpt,
+    title: `${post.title} | Ehis Akhetuamhen`,
+    description,
     alternates: {
       canonical: `https://unmutedmomentspodcast.com/reflections/${post.slug}`,
     },
     openGraph: {
-      title: `${post.title} | Unmuted Moments`,
-      description: post.excerpt,
+      title: `${post.title} | Ehis Akhetuamhen`,
+      description,
       url: `https://unmutedmomentspodcast.com/reflections/${post.slug}`,
       type: "article",
       siteName: "Unmuted Moments",
@@ -31,8 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Unmuted Moments`,
-      description: post.excerpt,
+      title: `${post.title} | Ehis Akhetuamhen`,
+      description,
       images: ["https://unmutedmomentspodcast.com/og-image.jpg"],
     },
   };

@@ -1,4 +1,4 @@
-import { getVideoById, getVideosFromPlaylist, formatDate } from "@/lib/youtube";
+import { getVideoById, getVideosFromPlaylist, formatDate, excerptDescription } from "@/lib/youtube";
 import { truncateGrapheme } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import EpisodeCard from "@/components/EpisodeCard";
@@ -129,8 +129,13 @@ export default async function EpisodePage({ params }: Props) {
     image: video.thumbnail,
     associatedMedia: {
       "@type": "VideoObject",
+      name: video.title,
+      description: excerptDescription(video.description, 300) || video.title,
+      thumbnailUrl: video.thumbnail,
+      uploadDate: video.publishedAt,
       embedUrl: `https://www.youtube.com/embed/${video.id}`,
       url: `https://www.youtube.com/watch?v=${video.id}`,
+      ...(video.duration ? { duration: video.duration } : {}),
     },
     partOfSeries: {
       "@type": "PodcastSeries",

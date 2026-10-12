@@ -109,7 +109,8 @@ async function fetchVideoDetails(ids: string[]): Promise<YouTubeVideo[]> {
       .map((item: any) => {
         const rawTitle = item.snippet.title as string;
         const title = stripTitle(rawTitle);
-        const durationSeconds = parseDuration(item.contentDetails?.duration || "");
+        const rawDuration = item.contentDetails?.duration as string | undefined;
+        const durationSeconds = parseDuration(rawDuration || "");
         return {
           id: item.id,
           title,
@@ -121,6 +122,7 @@ async function fetchVideoDetails(ids: string[]): Promise<YouTubeVideo[]> {
             item.snippet.thumbnails?.medium?.url ||
             item.snippet.thumbnails?.default?.url,
           durationSeconds,
+          duration: rawDuration || undefined,
         };
       });
   } catch (e) {
@@ -203,6 +205,7 @@ export async function getVideoById(
     const item = data.items[0];
     const rawTitle = item.snippet.title as string;
     const title = stripTitle(rawTitle);
+    const rawDuration = item.contentDetails?.duration as string | undefined;
     return {
       id: item.id,
       title,
@@ -212,6 +215,7 @@ export async function getVideoById(
         item.snippet.thumbnails?.maxres?.url ||
         item.snippet.thumbnails?.high?.url ||
         item.snippet.thumbnails?.medium?.url,
+      duration: rawDuration || undefined,
     };
   } catch (e) {
     console.error(e);

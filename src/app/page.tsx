@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getVideosFromPlaylist } from "@/lib/youtube";
+import { getVideosFromPlaylist, getVideoById, excerptDescription } from "@/lib/youtube";
 import EpisodeCard from "@/components/EpisodeCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import LatestEpisodeButton from "@/components/LatestEpisodeButton";
@@ -70,7 +70,10 @@ const testimonials = [
 ];
 
 export default async function HomePage() {
-  const allEpisodes = await getVideosFromPlaylist("PLA41Q9OxQLzxSv_mSzqA8OaSeFvoc-efE", 15);
+  const [allEpisodes, featuredVideo] = await Promise.all([
+    getVideosFromPlaylist("PLA41Q9OxQLzxSv_mSzqA8OaSeFvoc-efE", 15),
+    getVideoById("rqUvs8j6bQM"),
+  ]);
   const episodes = allEpisodes
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, 3);
@@ -117,6 +120,20 @@ export default async function HomePage() {
     ],
   };
 
+  const featuredVideoJsonLd = featuredVideo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: featuredVideo.title,
+        description: excerptDescription(featuredVideo.description, 300) || featuredVideo.title,
+        thumbnailUrl: featuredVideo.thumbnail,
+        uploadDate: featuredVideo.publishedAt,
+        embedUrl: "https://www.youtube.com/embed/rqUvs8j6bQM",
+        url: "https://www.youtube.com/watch?v=rqUvs8j6bQM",
+        ...(featuredVideo.duration ? { duration: featuredVideo.duration } : {}),
+      }
+    : null;
+
   return (
     <>
       <script
@@ -127,6 +144,12 @@ export default async function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
+      {featuredVideoJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(featuredVideoJsonLd) }}
+        />
+      )}
       {/* ─── HERO — two-column layout ─── */}
       <section className="bg-cream pt-20 md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
